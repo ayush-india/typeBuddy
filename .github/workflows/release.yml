@@ -54,11 +54,8 @@ jobs:
         shell: bash
         run: |
           mkdir dist
-          if [ "${{ matrix.os }}" = "windows-2019" ]; then
-            cp "target/${{ matrix.target }}/release/$BIN_NAME.exe" "dist/"
-          else
+          tree .
             cp "target/${{ matrix.target }}/release/$BIN_NAME" "dist/"
-          fi
       - uses: actions/upload-artifact@v2.2.4
         with:
           name: bins-${{ matrix.build }}
