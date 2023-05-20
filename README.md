@@ -12,7 +12,14 @@ All in the convenience of your own terminal!
 2. Open your terminal and run:
 - `type_buddy start`
 
-Have fun improving your typing skills :) 
+3. Have fun improving your typing skills :)
+
+## Download Binary
+if you do not want to compile the binary with cargo you can also download the binary itself for
+Intel chip MacOS and x86_64 Linux systems
+
+Head over to the latest GitHub release and download the artifact.
+
 
 ## Additional settings
 If you want to start saving your stats and being able to plot them in a graph, your will need to
@@ -27,6 +34,7 @@ TypeBuddy will use this to read from and write to in order to save your stats.
 
 ## Commands
 - `type_buddy start`
+- `type_buddy start --max-minutes <minutes>` typing with a deadline :)
 - `type_buddy plot --wpm` to plot your WPM
 - `type_buddy plot --accuracy` to plot your accuracy
 
